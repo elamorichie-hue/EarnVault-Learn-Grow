@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-<title> GrowthVault</title>
+<title>GrowthVault — Learn • Grow • Achieve</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src='//libtl.com/sdk.js' data-zone='11153859' data-sdk='show_11153859'></script>
 <style>
@@ -44,7 +44,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 .splash-logo span{color:var(--purple2)}
 .splash-tag{font-size:12px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-bottom:12px}
 .splash-sub{font-size:14px;color:var(--dim);line-height:1.6;margin-bottom:40px;max-width:280px}
-.splash-btn{width:100%;max-width:300px;padding:16px;background:var(--purple);border:none;border-radius:14px;color:#fff;font-family:'Inter',sans-serif;font-weight:700;font-size:16px;cursor:pointer;box-shadow:0 0 40px rgba(124,92,252,0.4)}
+.splash-btn{width:100%;max-width:300px;padding:16px;background:var(--purple);border:none;border-radius:14px;color:#fff;font-family:'Inter',sans-serif;font-weight:700;font-size:16px;cursor:pointer;transition:all 0.15s;box-shadow:0 8px 16px rgba(124,92,252,0.25)}
 .splash-btn:active{transform:scale(0.98)}
 
 /* HEADER */
@@ -58,7 +58,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 
 /* NAV */
 .nav{display:flex;background:var(--surface);border-top:1px solid var(--border);position:fixed;bottom:0;left:0;right:0;z-index:10}
-.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 12px;background:none;border:none;color:var(--muted);font-size:9px;font-family:'Inter',sans-serif;font-weight:600;cursor:pointer;text-transform:uppercase;letter-spacing:0.3px;transition:color 0.15s}
+.nav-btn{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;padding:8px 0 12px;background:none;border:none;color:var(--muted);font-size:9px;font-family:'Inter',sans-serif;font-weight:600;cursor:pointer;transition:color 0.15s}
 .nav-btn.active{color:var(--purple2)}
 .nav-icon{font-size:18px;line-height:1}
 
@@ -67,7 +67,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 
 /* ── HOME ── */
 .profile-row{display:flex;align-items:center;gap:12px;margin-bottom:14px}
-.avatar-wrap{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#3b1fa8,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0;border:2px solid var(--purple)}
+.avatar-wrap{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#3b1fa8,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0;border:2px solid var(--purple-dim)}
 .profile-texts{}
 .welcome-lbl{font-size:12px;color:var(--muted);margin-bottom:1px}
 .profile-name{font-size:20px;font-weight:800;margin-bottom:1px}
@@ -177,11 +177,11 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 /* ── ACHIEVEMENTS ── */
 .ach-filters{display:flex;gap:8px;margin-bottom:14px;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
 .ach-filters::-webkit-scrollbar{display:none}
-.flt-btn{padding:7px 16px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--muted);font-family:'Inter',sans-serif;font-weight:600;font-size:12px;cursor:pointer;white-space:nowrap}
+.flt-btn{padding:7px 16px;background:var(--card);border:1px solid var(--border);border-radius:20px;color:var(--muted);font-family:'Inter',sans-serif;font-weight:600;font-size:12px;cursor:pointer;transition:all 0.15s}
 .flt-btn.active{background:var(--purple-dim);border-color:var(--purple);color:var(--purple2)}
 
 .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
-.ach-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;position:relative;overflow:hidden}
+.ach-card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px 8px;display:flex;flex-direction:column;align-items:center;gap:5px;text-align:center;position:relative}
 .ach-card.unlocked{border-color:rgba(124,92,252,0.4)}
 .ach-card.locked{opacity:0.38;filter:grayscale(0.8)}
 /* Hexagon badge */
@@ -198,7 +198,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 /* ── PROFILE ── */
 .prof-card{background:var(--card);border:1px solid var(--border);border-radius:18px;padding:16px;margin-bottom:12px}
 .prof-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
-.prof-av{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#3b1fa8,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:28px;border:2px solid var(--purple)}
+.prof-av{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,#3b1fa8,#6d28d9);display:flex;align-items:center;justify-content:center;font-size:28px;border:2px solid var(--purple-dim)}
 .prof-info{flex:1}
 .prof-name{font-size:18px;font-weight:800;margin-bottom:4px}
 .prof-lvl-badge{display:inline-flex;align-items:center;gap:5px;background:var(--purple-dim);border:1px solid rgba(124,92,252,0.3);border-radius:20px;padding:3px 10px;font-size:11px;font-weight:700;color:var(--purple2)}
@@ -242,7 +242,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 #lessonScreen{position:fixed;inset:0;background:var(--bg);z-index:50;display:none;flex-direction:column}
 #lessonScreen.show{display:flex}
 .ls-header{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--surface);border-bottom:1px solid var(--border)}
-.ls-back{width:36px;height:36px;background:var(--card);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;color:#fff;flex-shrink:0}
+.ls-back{width:36px;height:36px;background:var(--card);border:1px solid var(--border);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;cursor:pointer;color:var(--text)}
 .ls-title{font-size:16px;font-weight:800;flex:1}
 .ls-prog-wrap{padding:12px 16px 0}
 .ls-prog-bar{background:var(--card);border-radius:20px;height:6px;overflow:hidden;margin-bottom:4px}
@@ -289,7 +289,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 .ad-skip.show{display:block}
 
 /* TOAST */
-.toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--green);color:#000;padding:9px 18px;border-radius:50px;font-weight:800;font-size:12px;opacity:0;transition:all 0.3s;z-index:200;white-space:nowrap;pointer-events:none}
+.toast{position:fixed;bottom:88px;left:50%;transform:translateX(-50%) translateY(16px);background:var(--green);color:#000;padding:9px 18px;border-radius:50px;font-weight:800;font-size:12px;opacity:0;transition:all 0.3s;pointer-events:none}
 .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 .toast.p{background:var(--purple);color:#fff}
 .toast.a{background:var(--amber);color:#000}
@@ -300,9 +300,9 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 <!-- SPLASH -->
 <div class="screen active" id="splash">
   <div class="splash-icon">💎</div>
-  <div class="splash-logo">Earn<span>Vault</span></div>
+  <div class="splash-logo">Growth<span>Vault</span></div>
   <div class="splash-tag">Learn • Grow • Achieve</div>
-  <p class="splash-sub">Complete lessons, earn EV points and level up your skills every day.</p>
+  <p class="splash-sub">Complete lessons, earn GV points and level up your skills every day.</p>
   <button class="splash-btn" onclick="enterApp()">Start Learning →</button>
 </div>
 
@@ -310,7 +310,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
 <div class="screen" id="app">
   <div class="header">
     <div>
-      <div class="hdr-logo">Earn<span>Vault</span></div>
+      <div class="hdr-logo">Growth<span>Vault</span></div>
       <div class="hdr-sub">Learn • Grow • Achieve</div>
     </div>
     <div class="hdr-right">
@@ -332,9 +332,9 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
     <div class="ev-card">
       <div class="ev-card-top">
         <div class="ev-score-section">
-          <div class="ev-score-lbl">EV Score</div>
-          <div><span class="ev-score-num" id="ev-num">0</span> <span class="ev-score-unit">EV</span></div>
-          <div class="ev-score-sub">EarnVault Experience</div>
+          <div class="ev-score-lbl">GV Score</div>
+          <div><span class="ev-score-num" id="ev-num">0</span> <span class="ev-score-unit">GV</span></div>
+          <div class="ev-score-sub">GrowthVault Experience</div>
         </div>
         <div class="level-section">
           <div class="level-lbl">Level</div>
@@ -343,7 +343,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
             <div class="level-name-txt" id="lv-name">Beginner</div>
           </div>
           <div class="level-prog-bar"><div class="level-prog-fill" id="lv-fill" style="width:0%"></div></div>
-          <div class="level-prog-lbl" id="lv-lbl">0 / 100 EV</div>
+          <div class="level-prog-lbl" id="lv-lbl">0 / 100 GV</div>
         </div>
       </div>
     </div>
@@ -361,18 +361,18 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
       <div class="ch-card-info">
         <div class="ch-card-title">Complete 1 lesson</div>
         <div class="ch-card-sub">Finish any lesson to keep your streak alive!</div>
-        <div class="ch-card-ev">+50 EV</div>
+        <div class="ch-card-ev">+50 GV</div>
       </div>
       <button class="ch-start-btn" onclick="switchTab('learn')">Start Challenge</button>
     </div>
 
     <div class="section-row"><div class="section-title">Continue Learning</div><div class="section-link" onclick="switchTab('learn')">View all</div></div>
     <div class="continue-scroll">
-      <div class="cont-card" onclick="openLesson('python')"><div class="cont-icon">🐍</div><div class="cont-name">Python Fundamentals</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" id="cp-python" style="width:0%"></div></div><div class="cont-pct">0%</div></div>
-      <div class="cont-card" onclick="openLesson('ai')"><div class="cont-icon">🤖</div><div class="cont-name">AI Tools Mastery</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" id="cp-ai" style="width:0%"></div></div><div class="cont-pct">0%</div></div>
-      <div class="cont-card" onclick="openLesson('freelance')"><div class="cont-icon">💼</div><div class="cont-name">Freelancing Essentials</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" id="cp-freelance" style="width:0%"></div></div><div class="cont-pct">0%</div></div>
-      <div class="cont-card" onclick="openLesson('marketing')"><div class="cont-icon">📈</div><div class="cont-name">Digital Marketing</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" id="cp-marketing" style="width:0%"></div></div><div class="cont-pct">0%</div></div>
-      <div class="cont-card" onclick="openLesson('social')"><div class="cont-icon">📱</div><div class="cont-name">Social Media Mastery</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" id="cp-social" style="width:0%"></div></div><div class="cont-pct">0%</div></div>
+      <div class="cont-card" onclick="openLesson('python')"><div class="cont-icon">🐍</div><div class="cont-name">Python Fundamentals</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" style="width:0%"></div></div><div class="cont-pct" id="cp-python">0%</div></div>
+      <div class="cont-card" onclick="openLesson('ai')"><div class="cont-icon">🤖</div><div class="cont-name">AI Tools Mastery</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" style="width:0%"></div></div><div class="cont-pct" id="cp-ai">0%</div></div>
+      <div class="cont-card" onclick="openLesson('freelance')"><div class="cont-icon">💼</div><div class="cont-name">Freelancing Essentials</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" style="width:0%"></div></div><div class="cont-pct" id="cp-freelance">0%</div></div>
+      <div class="cont-card" onclick="openLesson('marketing')"><div class="cont-icon">📈</div><div class="cont-name">Digital Marketing</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" style="width:0%"></div></div><div class="cont-pct" id="cp-marketing">0%</div></div>
+      <div class="cont-card" onclick="openLesson('social')"><div class="cont-icon">📱</div><div class="cont-name">Social Media Mastery</div><div class="cont-meta">5 Lessons</div><div class="cont-prog"><div class="cont-prog-fill" style="width:0%"></div></div><div class="cont-pct" id="cp-social">0%</div></div>
     </div>
 
     <div class="motivation-box">
@@ -387,11 +387,11 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
       <div class="learn-hdr-title">Choose Your Learning Path</div>
       <div class="learn-hdr-sub">Learn new skills. Build your future.</div>
     </div>
-    <div class="path-item" onclick="openLesson('python')"><div class="path-ico" style="background:rgba(59,130,246,0.15)">🐍</div><div class="path-body"><div class="path-name">Python Fundamentals</div><div class="path-desc">Learn Python from scratch and build real projects.</div><div class="path-footer"><span class="path-tag">Beginner</span><span class="path-cnt">5 Lessons</span></div></div><div class="path-arr">›</div></div>
-    <div class="path-item" onclick="openLesson('ai')"><div class="path-ico" style="background:rgba(124,92,252,0.15)">🤖</div><div class="path-body"><div class="path-name">AI Tools Mastery</div><div class="path-desc">Master the best AI tools and boost productivity.</div><div class="path-footer"><span class="path-tag">Beginner</span><span class="path-cnt">5 Lessons</span></div></div><div class="path-arr">›</div></div>
-    <div class="path-item" onclick="openLesson('freelance')"><div class="path-ico" style="background:rgba(245,158,11,0.15)">💼</div><div class="path-body"><div class="path-name">Freelancing Essentials</div><div class="path-desc">Learn how to find clients and grow your freelance career.</div><div class="path-footer"><span class="path-tag">Beginner</span><span class="path-cnt">5 Lessons</span></div></div><div class="path-arr">›</div></div>
-    <div class="path-item" onclick="openLesson('marketing')"><div class="path-ico" style="background:rgba(34,197,94,0.15)">📈</div><div class="path-body"><div class="path-name">Digital Marketing</div><div class="path-desc">Grow your brand and reach more people online.</div><div class="path-footer"><span class="path-tag">Beginner</span><span class="path-cnt">5 Lessons</span></div></div><div class="path-arr">›</div></div>
-    <div class="path-item" onclick="openLesson('social')"><div class="path-ico" style="background:rgba(239,68,68,0.15)">📱</div><div class="path-body"><div class="path-name">Social Media Mastery</div><div class="path-desc">Build your presence and grow your audience.</div><div class="path-footer"><span class="path-tag">Beginner</span><span class="path-cnt">5 Lessons</span></div></div><div class="path-arr">›</div></div>
+    <div class="path-item" onclick="openLesson('python')"><div class="path-ico" style="background:rgba(59,130,246,0.15)">🐍</div><div class="path-body"><div class="path-name">Python Fundamentals</div><div class="path-desc">Learn coding from scratch with Python</div><div class="path-footer"><span class="path-tag">5 LESSONS</span><span class="path-cnt">Beginner</span></div></div><div class="path-arr">›</div></div>
+    <div class="path-item" onclick="openLesson('ai')"><div class="path-ico" style="background:rgba(124,92,252,0.15)">🤖</div><div class="path-body"><div class="path-name">AI Tools Mastery</div><div class="path-desc">Master ChatGPT, Claude and more</div><div class="path-footer"><span class="path-tag">5 LESSONS</span><span class="path-cnt">Beginner</span></div></div><div class="path-arr">›</div></div>
+    <div class="path-item" onclick="openLesson('freelance')"><div class="path-ico" style="background:rgba(245,158,11,0.15)">💼</div><div class="path-body"><div class="path-name">Freelancing Essentials</div><div class="path-desc">Start your freelance career today</div><div class="path-footer"><span class="path-tag">5 LESSONS</span><span class="path-cnt">Beginner</span></div></div><div class="path-arr">›</div></div>
+    <div class="path-item" onclick="openLesson('marketing')"><div class="path-ico" style="background:rgba(34,197,94,0.15)">📈</div><div class="path-body"><div class="path-name">Digital Marketing</div><div class="path-desc">Grow your business online</div><div class="path-footer"><span class="path-tag">5 LESSONS</span><span class="path-cnt">Intermediate</span></div></div><div class="path-arr">›</div></div>
+    <div class="path-item" onclick="openLesson('social')"><div class="path-ico" style="background:rgba(239,68,68,0.15)">📱</div><div class="path-body"><div class="path-name">Social Media Mastery</div><div class="path-desc">Build your personal brand</div><div class="path-footer"><span class="path-tag">5 LESSONS</span><span class="path-cnt">Beginner</span></div></div><div class="path-arr">›</div></div>
   </div>
 
   <!-- CHALLENGES -->
@@ -410,7 +410,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
           <div class="ch-prog-bar"><div class="ch-prog-fill" id="tch-fill" style="width:0%;background:var(--purple)"></div></div>
           <div class="ch-prog-lbl" id="tch-lbl">0 / 1</div>
         </div>
-        <div class="ch-ev-badge" style="color:var(--purple2)">+50 EV</div>
+        <div class="ch-ev-badge" style="color:var(--purple2)">+50 GV</div>
         <button class="ch-action-btn today" onclick="switchTab('learn')">Start Now</button>
       </div>
     </div>
@@ -420,7 +420,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
         <div class="ch-big-left">
           <div class="ch-big-tag weekly">🎯 Weekly Challenge</div>
           <div class="ch-big-title">Score 80% in 3 quizzes</div>
-          <div class="ch-big-desc">Test your knowledge and earn more EV!</div>
+          <div class="ch-big-desc">Test your knowledge and earn more GV!</div>
         </div>
         <div class="ch-big-icon weekly">🎯</div>
       </div>
@@ -429,7 +429,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
           <div class="ch-prog-bar"><div class="ch-prog-fill" id="wch-fill" style="width:0%;background:var(--cyan)"></div></div>
           <div class="ch-prog-lbl" id="wch-lbl">0 / 3</div>
         </div>
-        <div class="ch-ev-badge" style="color:var(--cyan)">+150 EV</div>
+        <div class="ch-ev-badge" style="color:var(--cyan)">+150 GV</div>
         <button class="ch-action-btn weekly" onclick="switchTab('learn')">Start</button>
       </div>
     </div>
@@ -448,15 +448,15 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
           <div class="ch-prog-bar"><div class="ch-prog-fill" id="mch-fill" style="width:0%;background:var(--green)"></div></div>
           <div class="ch-prog-lbl" id="mch-lbl">0 / 7</div>
         </div>
-        <div class="ch-ev-badge" style="color:var(--green)">+500 EV</div>
+        <div class="ch-ev-badge" style="color:var(--green)">+500 GV</div>
       </div>
     </div>
 
     <div class="section-title" style="margin-bottom:10px">More Challenges</div>
     <div class="more-ch-card">
-      <div class="more-ch-row"><div class="more-ch-ico">🎁</div><div class="more-ch-name">Complete a Mini Project</div><div class="more-ch-ev">+100 EV</div></div>
-      <div class="more-ch-row"><div class="more-ch-ico">👥</div><div class="more-ch-name">Invite a Friend</div><div class="more-ch-ev">+50 EV</div></div>
-      <div class="more-ch-row"><div class="more-ch-ico">👤</div><div class="more-ch-name">Update Your Profile</div><div class="more-ch-ev">+20 EV</div></div>
+      <div class="more-ch-row"><div class="more-ch-ico">🎁</div><div class="more-ch-name">Complete a Mini Project</div><div class="more-ch-ev">+100 GV</div></div>
+      <div class="more-ch-row"><div class="more-ch-ico">👥</div><div class="more-ch-name">Invite a Friend</div><div class="more-ch-ev">+50 GV</div></div>
+      <div class="more-ch-row"><div class="more-ch-ico">👤</div><div class="more-ch-name">Update Your Profile</div><div class="more-ch-ev">+20 GV</div></div>
     </div>
   </div>
 
@@ -474,14 +474,14 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
     </div>
     <div class="ach-grid">
       <div class="ach-card unlocked" id="ach-fl" data-cat="learning">
-        <div class="hex-wrap"><svg viewBox="0 0 100 100"><polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="#3b1fa8" stroke="#7C5CFC" stroke-width="3"/></svg><div class="hex-emoji">📚</div></div>
+        <div class="hex-wrap"><svg viewBox="0 0 100 100"><polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="#3b1fa8" stroke="#7C5CFC" stroke-width="3"/></svg><div class="hex-emoji">📖</div></div>
         <div class="ach-name">First Lesson</div><div class="ach-desc">Complete your first lesson</div>
         <div class="ach-prog-bar"><div class="ach-prog-fill" id="afl-fill" style="width:0%"></div></div>
         <div class="ach-prog-lbl" id="afl-lbl">0 / 1</div>
       </div>
       <div class="ach-card locked" id="ach-100" data-cat="special">
-        <div class="hex-wrap"><svg viewBox="0 0 100 100"><polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="#2d1a00" stroke="#F59E0B" stroke-width="3"/></svg><div class="hex-emoji">⭐</div></div>
-        <div class="ach-name">First 100 EV</div><div class="ach-desc">Earn your first 100 EV</div>
+        <div class="hex-wrap"><svg viewBox="0 0 100 100"><polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="#2d1a00" stroke="#F59E0B" stroke-width="3"/></svg><div class="hex-emoji">💯</div></div>
+        <div class="ach-name">First 100 GV</div><div class="ach-desc">Earn your first 100 GV</div>
         <div class="ach-prog-bar"><div class="ach-prog-fill" id="a100-fill" style="width:0%;background:var(--amber)"></div></div>
         <div class="ach-prog-lbl" id="a100-lbl">0 / 100</div>
       </div>
@@ -492,7 +492,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
         <div class="ach-prog-lbl" id="a3s-lbl">0 / 3</div>
       </div>
       <div class="ach-card locked" id="ach-7s" data-cat="streaks">
-        <div class="hex-wrap"><svg viewBox="0 0 100 100"><polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="#1a0d00" stroke="#F59E0B" stroke-width="3"/></svg><div class="hex-emoji">⚡</div></div>
+        <div class="hex-wrap"><svg viewBox="0 0 100 100"><polygon points="50,5 93,27.5 93,72.5 50,95 7,72.5 7,27.5" fill="#1a0d00" stroke="#F59E0B" stroke-width="3"/></svg><div class="hex-emoji">🌟</div></div>
         <div class="ach-name">7-Day Streak</div><div class="ach-desc">Maintain a 7-day streak</div>
         <div class="ach-prog-bar"><div class="ach-prog-fill" id="a7s-fill" style="width:0%;background:var(--amber)"></div></div>
         <div class="ach-prog-lbl" id="a7s-lbl">0 / 7</div>
@@ -525,7 +525,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
       </div>
       <div class="prof-level-row">
         <div class="prof-level-txt">Level 1</div>
-        <div class="prof-ev-txt" id="p-ev-txt">0 / 100 EV</div>
+        <div class="prof-ev-txt" id="p-ev-txt">0 / 100 GV</div>
       </div>
       <div class="prof-xp-bar"><div class="prof-xp-fill" id="p-xp-fill"></div></div>
     </div>
@@ -533,7 +533,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
     <div class="stats-panel">
       <div class="stats-panel-title">Stats</div>
       <div class="stats-6">
-        <div class="stat-cell"><div class="stat-cell-val" id="ps-ev">0</div><div class="stat-cell-lbl">EV Score</div></div>
+        <div class="stat-cell"><div class="stat-cell-val" id="ps-ev">0</div><div class="stat-cell-lbl">GV Score</div></div>
         <div class="stat-cell"><div class="stat-cell-val" id="ps-streak">0</div><div class="stat-cell-lbl">Day Streak</div></div>
         <div class="stat-cell"><div class="stat-cell-val" id="ps-lessons">0</div><div class="stat-cell-lbl">Lessons Completed</div></div>
         <div class="stat-cell"><div class="stat-cell-val" id="ps-quizzes">0</div><div class="stat-cell-lbl">Quizzes Completed</div></div>
@@ -550,19 +550,19 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
         </div>
         <div class="levels-rocket">🚀</div>
       </div>
-      <div class="level-row active-lvl"><div class="lvl-ico" style="background:rgba(245,158,11,0.15)">⭐</div><div class="lvl-info"><div class="lvl-name">Beginner</div><div class="lvl-desc">Start your learning journey</div></div><div class="lvl-ev" style="color:var(--muted)">0 EV</div></div>
-      <div class="level-row"><div class="lvl-ico" style="background:rgba(34,197,94,0.15)">🔭</div><div class="lvl-info"><div class="lvl-name">Explorer</div><div class="lvl-desc">Keep learning, keep exploring</div></div><div class="lvl-ev" style="color:var(--green)">100 EV</div></div>
-      <div class="level-row"><div class="lvl-ico" style="background:rgba(59,130,246,0.15)">🏗️</div><div class="lvl-info"><div class="lvl-name">Builder</div><div class="lvl-desc">Build skills and create value</div></div><div class="lvl-ev" style="color:var(--blue)">500 EV</div></div>
-      <div class="level-row"><div class="lvl-ico" style="background:rgba(245,158,11,0.15)">🌟</div><div class="lvl-info"><div class="lvl-name">Creator</div><div class="lvl-desc">Create, inspire, and grow</div></div><div class="lvl-ev" style="color:var(--amber)">1000 EV</div></div>
-      <div class="level-row"><div class="lvl-ico" style="background:rgba(239,68,68,0.15)">🎓</div><div class="lvl-info"><div class="lvl-name">Mentor</div><div class="lvl-desc">Guide others and lead</div></div><div class="lvl-ev" style="color:var(--red)">2500 EV</div></div>
-      <div class="level-row"><div class="lvl-ico" style="background:rgba(245,158,11,0.15)">👑</div><div class="lvl-info"><div class="lvl-name">Master</div><div class="lvl-desc">Master your skills. Inspire the world</div></div><div class="lvl-ev" style="color:var(--amber)">5000 EV</div></div>
+      <div class="level-row active-lvl"><div class="lvl-ico" style="background:rgba(245,158,11,0.15)">⭐</div><div class="lvl-info"><div class="lvl-name">Beginner</div><div class="lvl-desc">Start your learning journey</div></div><div class="lvl-ev">0 GV</div></div>
+      <div class="level-row"><div class="lvl-ico" style="background:rgba(34,197,94,0.15)">🔭</div><div class="lvl-info"><div class="lvl-name">Explorer</div><div class="lvl-desc">Keep learning, growing</div></div><div class="lvl-ev">100 GV</div></div>
+      <div class="level-row"><div class="lvl-ico" style="background:rgba(59,130,246,0.15)">🏗️</div><div class="lvl-info"><div class="lvl-name">Builder</div><div class="lvl-desc">Build skills and habits</div></div><div class="lvl-ev">500 GV</div></div>
+      <div class="level-row"><div class="lvl-ico" style="background:rgba(245,158,11,0.15)">🌟</div><div class="lvl-info"><div class="lvl-name">Creator</div><div class="lvl-desc">Create, inspire others</div></div><div class="lvl-ev">1000 GV</div></div>
+      <div class="level-row"><div class="lvl-ico" style="background:rgba(239,68,68,0.15)">🎓</div><div class="lvl-info"><div class="lvl-name">Mentor</div><div class="lvl-desc">Guide others and share</div></div><div class="lvl-ev">2500 GV</div></div>
+      <div class="level-row"><div class="lvl-ico" style="background:rgba(245,158,11,0.15)">👑</div><div class="lvl-info"><div class="lvl-name">Master</div><div class="lvl-desc">Master your skills</div></div><div class="lvl-ev">5000 GV</div></div>
     </div>
 
     <div class="menu-panel">
       <div class="menu-row"><div class="menu-ico">🕐</div><div class="menu-lbl">Learning History</div><div class="menu-arr">›</div></div>
       <div class="menu-row"><div class="menu-ico">🔖</div><div class="menu-lbl">Bookmarks</div><div class="menu-arr">›</div></div>
       <div class="menu-row"><div class="menu-ico">🏅</div><div class="menu-lbl">Certificates</div><div class="menu-arr">›</div></div>
-      <div class="menu-row" onclick="copyRef()"><div class="menu-ico">👥</div><div class="menu-lbl">Invite Friends (+50 EV)</div><div class="menu-arr">›</div></div>
+      <div class="menu-row" onclick="copyRef()"><div class="menu-ico">👥</div><div class="menu-lbl">Invite Friends (+50 GV)</div><div class="menu-arr">›</div></div>
       <div class="menu-row"><div class="menu-ico">⚙️</div><div class="menu-lbl">Settings</div><div class="menu-arr">›</div></div>
     </div>
   </div>
@@ -598,8 +598,8 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
   <div class="done-icon">🎉</div>
   <div class="done-title">Lesson Complete!</div>
   <div class="done-sub">Great work! You earned:</div>
-  <div class="done-ev" id="done-ev">+50 EV</div>
-  <div class="done-ev-lbl">EarnVault Experience Points</div>
+  <div class="done-ev" id="done-ev">+50 GV</div>
+  <div class="done-ev-lbl">GrowthVault Experience Points</div>
   <button class="done-btn" onclick="closeDone()">Continue Learning →</button>
 </div>
 
@@ -611,7 +611,7 @@ body{background:var(--bg);color:var(--white);font-family:'Inter',sans-serif;min-
     <div class="ad-ttl">Level Up Your Skills</div>
     <div class="ad-sub">Discover tools used by top professionals worldwide</div>
     <div class="ad-tmr" id="ad-tmr">Please wait 5s...</div>
-    <button class="ad-skip" id="ad-skip" onclick="closeAd()">Collect EV & Continue 💎</button>
+    <button class="ad-skip" id="ad-skip" onclick="closeAd()">Collect GV & Continue 💎</button>
   </div>
 </div>
 
@@ -636,33 +636,33 @@ const LEVELS=[
 
 const LESSONS={
   python:{title:'🐍 Python Fundamentals',steps:[
-    {type:'learn',emoji:'🐍',h:'What is Python?',t:'Python is one of the most popular programming languages in the world. Used for web development, data science, AI, and automation. Its simple syntax makes it perfect for beginners.',hl:'💡 Python was created in 1991. Today it\'s used by Google, Netflix, NASA and millions of developers worldwide.'},
+    {type:'learn',emoji:'🐍',h:'What is Python?',t:'Python is one of the most popular programming languages in the world. Used for web development, data science, AI, and automation. Its simple syntax makes it perfect for beginners. Companies like Google, Netflix, and Spotify use Python daily!'},
     {type:'quiz',q:'What is Python primarily known for?',o:['Being the fastest language','Its simple syntax and versatility','Only used for games','Only works on Windows'],c:1},
-    {type:'learn',emoji:'📝',h:'Your First Python Code',t:'In Python, printing something is incredibly simple. Just write: print("Hello World"). That\'s it! Compare that to other languages that need many more lines to do the same.',hl:'💡 Variables in Python need no type declaration. Just write: name = "Elamorichie" and Python knows it\'s text. age = 18 and Python knows it\'s a number.'},
+    {type:'learn',emoji:'📝',h:'Your First Python Code',t:'In Python, printing something is incredibly simple. Just write: print("Hello World"). That\'s it! Compare that to other languages that require 10+ lines. Python does more with less code, which is why beginners love it!'},
     {type:'quiz',q:'How do you print "Hello" in Python?',o:['console.log("Hello")','System.out.println("Hello")','print("Hello")','echo "Hello"'],c:2}
   ]},
   ai:{title:'🤖 AI Tools Mastery',steps:[
-    {type:'learn',emoji:'🤖',h:'The AI Revolution is Here',t:'AI tools like ChatGPT, Claude, Midjourney and Gemini can write, code, design and research in seconds. The people who master these tools will have a massive advantage in every industry.',hl:'💡 AI won\'t replace you — but someone using AI will. Learning AI tools is the #1 skill of 2026.'},
+    {type:'learn',emoji:'🤖',h:'The AI Revolution is Here',t:'AI tools like ChatGPT, Claude, Midjourney and Gemini can write, code, design and research in seconds. The people who master these tools will dominate their industries. You\'re learning at the perfect time!'},
     {type:'quiz',q:'What is the biggest advantage of AI tools?',o:['They do all your thinking','They make you faster and more productive','Only useful for programmers','Replace the need to learn'],c:1},
-    {type:'learn',emoji:'✍️',h:'How to Write Great Prompts',t:'A prompt is the instruction you give an AI. The better your prompt, the better the result. Always be specific, give context, and state the format you want the response in.',hl:'💡 Weak: "Write about marketing." Strong: "Write a 5-point Instagram caption strategy for a fashion brand targeting Nigerian women aged 20-35, using a fun relatable tone."'},
+    {type:'learn',emoji:'✍️',h:'How to Write Great Prompts',t:'A prompt is the instruction you give an AI. The better your prompt, the better the result. Always be specific, give context, and explain the desired format. Treat AI like a team member you\'re delegating work to.'},
     {type:'quiz',q:'What makes a great AI prompt?',o:['Short and vague','Specific with context and desired format','Using all capital letters','Asking many questions at once'],c:1}
   ]},
   freelance:{title:'💼 Freelancing Essentials',steps:[
-    {type:'learn',emoji:'💼',h:'What is Freelancing?',t:'Freelancing means selling your skills to multiple clients instead of one employer. You set your own rates, work your own hours, and earn from anywhere with just a phone or laptop.',hl:'💡 Top freelance skills in 2026: Graphic design, copywriting, web development, video editing, social media, and AI prompt engineering.'},
+    {type:'learn',emoji:'💼',h:'What is Freelancing?',t:'Freelancing means selling your skills to multiple clients instead of one employer. You set your own rates, work your own hours, and earn passive income. Millions freelance on platforms like Fiverr and Upwork.'},
     {type:'quiz',q:'What is the biggest benefit of freelancing?',o:['Guaranteed salary','Free office','Freedom to work from anywhere and set your rates','Company insurance'],c:2},
-    {type:'learn',emoji:'🌐',h:'Where to Find Your First Client',t:'The best platforms to start are Fiverr and Upwork. On Fiverr, create a "gig" — a service listing. Price low to get reviews first. After 5 good reviews, raise your rates.',hl:'💡 Your first job is NOT about money. It\'s about getting a 5-star review. One review unlocks many higher-paying jobs in future.'},
+    {type:'learn',emoji:'🌐',h:'Where to Find Your First Client',t:'The best platforms to start are Fiverr and Upwork. On Fiverr, create a "gig" — a service listing. Price low to get reviews and testimonials. Once you build credibility, you can raise rates and attract better clients!'},
     {type:'quiz',q:'What should be your main focus as a new freelancer?',o:['Charging the highest rates','Getting your first 5-star review','Working 80 hours a week','Building an expensive website'],c:1}
   ]},
   marketing:{title:'📈 Digital Marketing',steps:[
-    {type:'learn',emoji:'📈',h:'What is Digital Marketing?',t:'Digital marketing is promoting products using the internet. It includes social media marketing, email marketing, content marketing, SEO, and paid ads. Every business in the world needs digital marketing.',hl:'💡 The global digital marketing industry is worth over $500 billion. Businesses need people who understand how to reach customers online.'},
+    {type:'learn',emoji:'📈',h:'What is Digital Marketing?',t:'Digital marketing is promoting products using the internet. It includes social media marketing, email marketing, content marketing, SEO, and paid ads. Every major brand uses digital marketing to reach customers online.'},
     {type:'quiz',q:'Which of these is NOT digital marketing?',o:['SEO','Email marketing','Billboard advertising','Social media marketing'],c:2},
-    {type:'learn',emoji:'🎯',h:'Understanding Your Audience',t:'The most important marketing skill is knowing WHO you are talking to. Age, location, interests, problems — the more you know about your audience, the better your marketing performs.',hl:'💡 Instead of "targeting food lovers", try "health-conscious Nigerian professionals aged 25-35 who want to eat clean but are short on time." Specific always beats general.'},
+    {type:'learn',emoji:'🎯',h:'Understanding Your Audience',t:'The most important marketing skill is knowing WHO you are talking to. Age, location, interests, problems — the more you know about your audience, the better your messages convert. Always research before launching campaigns!'},
     {type:'quiz',q:'Why is knowing your target audience important?',o:['To avoid talking to them','It helps create relevant messages that convert','It\'s not important','So you can charge more'],c:1}
   ]},
   social:{title:'📱 Social Media Mastery',steps:[
-    {type:'learn',emoji:'📱',h:'How to Make Money on Social Media',t:'4 main ways: Brand deals (companies pay you to promote), Affiliate marketing (commission on sales), Selling your own products, and Platform monetization (YouTube ads, TikTok fund).',hl:'💡 You don\'t need millions of followers. Micro-influencers with 5k-50k engaged followers often earn MORE per post than mega accounts because brands love high engagement.'},
+    {type:'learn',emoji:'📱',h:'How to Make Money on Social Media',t:'4 main ways: Brand deals (companies pay you to promote), Affiliate marketing (commission on sales), Selling your own products, and Ad revenue. The key is growing an engaged audience first!'},
     {type:'quiz',q:'Which creators often earn most per brand deal?',o:['10M+ follower accounts','Celebrity accounts','Micro-influencers 5k-50k followers','Anonymous accounts'],c:2},
-    {type:'learn',emoji:'🎯',h:'Pick Your Niche and Stay Consistent',t:'Fastest way to grow: pick ONE topic and post consistently. Finance, fitness, cooking, tech, travel — whatever you know. Post 3-5 times per week minimum. Consistency beats going viral.',hl:'💡 Instead of "fitness" try "home workouts for busy African professionals." Specific content attracts a loyal audience brands will pay to reach.'},
+    {type:'learn',emoji:'🎯',h:'Pick Your Niche and Stay Consistent',t:'Fastest way to grow: pick ONE topic and post consistently. Finance, fitness, cooking, tech, travel — whatever you know. Post regularly, engage with your audience, and watch your followers grow exponentially!'},
     {type:'quiz',q:'Most important factor for social media growth?',o:['Posting viral content randomly','Expensive camera equipment','Consistency within a clear niche','Buying followers'],c:2}
   ]}
 };
@@ -694,7 +694,7 @@ function updateAll(){
   document.getElementById('ev-num').textContent=ev;
   document.getElementById('lv-name').textContent=l.name;
   document.getElementById('lv-fill').style.width=pct+'%';
-  document.getElementById('lv-lbl').textContent=ev+' / '+n.min+' EV';
+  document.getElementById('lv-lbl').textContent=ev+' / '+n.min+' GV';
   document.getElementById('h-streak').textContent=streak;
   document.getElementById('h-lessons').textContent=lessons_done;
   document.getElementById('h-quizzes').textContent=quizzes_done;
@@ -713,7 +713,7 @@ function updateChallenges(){
 function updateProfile(){
   const l=getLevel(),n=getNextLevel(),pct=getLevelPct();
   document.getElementById('p-lvl-name').textContent=l.name;
-  document.getElementById('p-ev-txt').textContent=ev+' / '+n.min+' EV';
+  document.getElementById('p-ev-txt').textContent=ev+' / '+n.min+' GV';
   document.getElementById('p-xp-fill').style.width=pct+'%';
   document.getElementById('ps-ev').textContent=ev;
   document.getElementById('ps-streak').textContent=streak;
@@ -768,7 +768,7 @@ function renderStep(){
   const body=document.getElementById('ls-body'),btn=document.getElementById('ls-btn');
   btn.disabled=false; btn.textContent='Continue →';
   if(step.type==='learn'){
-    body.innerHTML=`<div class="learn-crd"><div class="learn-emoji">${step.emoji}</div><div class="learn-heading">${step.h}</div><div class="learn-text">${step.t}</div><div class="learn-hl">${step.hl}</div></div>`;
+    body.innerHTML=`<div class="learn-crd"><div class="learn-emoji">${step.emoji}</div><div class="learn-heading">${step.h}</div><div class="learn-text">${step.t}</div><div class="learn-hl">💡 Pro tip: Take notes and come back to review later for better retention!</div></div>`;
   } else {
     btn.disabled=true;
     body.innerHTML=`<div class="quiz-crd"><div class="quiz-q">🧠 ${step.q}</div><div class="quiz-opts">${step.o.map((o,i)=>`<button class="quiz-opt" onclick="answerQ(this,${i},${step.c})">${o}</button>`).join('')}</div></div>`;
@@ -800,12 +800,12 @@ function nextStep(){
   } else {renderStep();}
 }
 
-function showDone(amt){document.getElementById('done-ev').textContent='+'+amt+' EV';document.getElementById('doneScreen').classList.add('show');}
+function showDone(amt){document.getElementById('done-ev').textContent='+'+amt+' GV';document.getElementById('doneScreen').classList.add('show');}
 function closeDone(){document.getElementById('doneScreen').classList.remove('show');updateAll();}
 
 function checkAch(){
   if(lessons_done===1){ach_count++;showToast('🏅 Achievement unlocked: First Lesson!','a');}
-  if(ev>=100&&ach_count<2){ach_count++;showToast('🏅 Achievement: First 100 EV!','a');}
+  if(ev>=100&&ach_count<2){ach_count++;showToast('🏅 Achievement: First 100 GV!','a');}
 }
 
 function showAd(cb){
@@ -814,7 +814,7 @@ function showAd(cb){
   document.getElementById('ad-skip').classList.remove('show');
   document.getElementById('adOv').classList.add('show');
   try{if(typeof show_11153859==='function')show_11153859();}catch(e){}
-  adInt=setInterval(()=>{s--;if(s>0){document.getElementById('ad-tmr').textContent=`Please wait ${s}s...`;}else{clearInterval(adInt);document.getElementById('ad-tmr').textContent='Ad complete! ✓';document.getElementById('ad-skip').classList.add('show');}},1000);
+  adInt=setInterval(()=>{s--;if(s>0){document.getElementById('ad-tmr').textContent=`Please wait ${s}s...`;}else{clearInterval(adInt);document.getElementById('ad-tmr').textContent='Ad complete! Click below 👇';document.getElementById('ad-skip').classList.add('show');}},1000);
 }
 
 function closeAd(){clearInterval(adInt);document.getElementById('adOv').classList.remove('show');if(adCb){adCb();adCb=null;}}
